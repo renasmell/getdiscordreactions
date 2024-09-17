@@ -53,7 +53,7 @@ input: """)
                 print("new emoji set")
                 print()
             case 0: 
-                if auth != True or channel_id != True or emoji != True:
+               if len(auth) < 0 or len(channel_id) < 0 or len(emoji) < 0:
                     print("info not set")
                     continue
                 os.system('cls')
